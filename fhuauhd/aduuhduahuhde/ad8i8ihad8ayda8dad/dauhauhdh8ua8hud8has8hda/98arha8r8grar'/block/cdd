@@ -1,0 +1,98 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Mapple7777/UI-Librarys/main/UI-1/UI.lua"))()
+--local Whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/silentgod145/whitelist/main/whitelist",true))()
+
+local Window = Library:Create("jx","Game:prison life")
+
+local Tab1 = Window:Tab("Hacks")
+
+Tab1:button("fly(x)",function(bool)
+    loadstring(game:HttpGet("https://pastebin.com/raw/sUA9m6M6"))()
+end)
+Tab1:Slider("BIG CAMCAM",80,999,function(text)
+    workspace.CurrentCamera.FieldOfView = (text)
+end)
+local Tab2 = Window:Tab("trash talk and fov")
+Tab2:Button("TALK UR MESS (J)",function(bool)
+    local plr = game.Players.LocalPlayer
+repeat wait() until plr.Character
+local char = plr.Character
+
+local garbage = {
+    "BUBBLE GUM";
+    "KORBLOX L";
+    "MIC UP? EWWW";
+    "ur kinda bad";
+    ".";
+    ".";
+    ".";
+    ".";
+    ".";
+    ".";
+    "kitten";
+    "bad boa";
+    "JAY L";
+    "big bread";
+    "BIG DOGS ";
+    "6'1";
+    "ok";
+    "its good";
+    "BAD";
+    "run 1's eww";
+    "lol";
+    "x+";
+    "bullet";
+    "facetime";
+    "wsg drizzyy";
+    "look he's mad";
+    "cry more";
+    "keep crying";
+    "cry baby";
+    "hahaha I won";
+    "no more fortnites";
+    "umm what u gonna do kick me ";
+    "jay jay <3";
+    "i keep it on me";
+    "ON GOD";
+    "FAFAFAFA";
+    "mhm";
+    "stage";
+    "lil durk";
+    "purple hellcat";
+    "AI CHILL";
+    "LOLL";
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+function TrashTalk(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.J and gameProcessedEvent == false then        
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
+        garbage[math.random(1,#garbage)],
+        "All"
+    )
+    end
+end
+
+game:GetService("UserInputService").InputBegan:connect(TrashTalk)
+end)
+
+
+local Tab3 = Window:Tab("prison life cheats",false)
+
+Tab3:button("kick everyone",function(bool)
+loadstring(game:HttpGet("https://pastebin.com/raw/mDYUJZXV"))();
+end)
+
+Tab3:Button("admin cmds",function(bool)
+loadstring(game:HttpGet("https://pastebin.com/raw/dt7JbaH5"))();
+end)
